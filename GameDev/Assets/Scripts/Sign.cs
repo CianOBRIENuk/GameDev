@@ -15,7 +15,7 @@ public class Sign : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        dialogBox.SetActive(false);
     }
 
     // Update is called once per frame

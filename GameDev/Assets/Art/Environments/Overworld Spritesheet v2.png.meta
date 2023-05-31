@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4057,8 +4057,8 @@ TextureImporter:
       Overworld Spritesheet v2_159: 400418479
       Overworld Spritesheet v2_77: 1491845318
       Overworld Spritesheet v2_24: 1878722691
-      Overworld Spritesheet v2_43: -1207354242
       Overworld Spritesheet v2_169: 1456458103
+      Overworld Spritesheet v2_43: -1207354242
       Overworld Spritesheet v2_51: 1572645167
       Overworld Spritesheet v2_60: 1955499432
       Overworld Spritesheet v2_105: 882691834
@@ -4147,17 +4147,17 @@ TextureImporter:
       Overworld Spritesheet v2_0: -1199122938
       Overworld Spritesheet v2_78: -1980321409
       Overworld Spritesheet v2_18: 251178662
-      Overworld Spritesheet v2_33: 622184565
       Overworld Spritesheet v2_109: -865882578
       Overworld Spritesheet v2_118: 921115355
-      Overworld Spritesheet v2_176: 1034954357
       Overworld Spritesheet v2_128: -1374175059
+      Overworld Spritesheet v2_33: 622184565
       Overworld Spritesheet v2_182: -1127990183
       Overworld Spritesheet v2_119: 441653589
+      Overworld Spritesheet v2_176: 1034954357
       Overworld Spritesheet v2_132: -2014294558
       Overworld Spritesheet v2_80: 283608820
-      Overworld Spritesheet v2_133: -229101497
       Overworld Spritesheet v2_157: 582127783
+      Overworld Spritesheet v2_133: -229101497
       Overworld Spritesheet v2_113: -371223224
       Overworld Spritesheet v2_149: 1564569332
       Overworld Spritesheet v2_40: 1655462237

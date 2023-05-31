@@ -9,10 +9,10 @@ public class RoomMove : MonoBehaviour
     public Vector2 cameraChangeMax;
     public Vector3 playerChange;
     private CameraControl cam;
-    public bool needText;
-    public string placeName;
-    public GameObject text;
-    public Text placeText;
+    //public bool needText;
+    //public string placeName;
+    //public GameObject text;
+    //public Text placeText;
 
     // Start is called before the first frame update
     void Start()
@@ -32,13 +32,17 @@ public class RoomMove : MonoBehaviour
             cam.minPosition += cameraChangeMin;
             cam.maxPosition += cameraChangeMax;
             other.transform.position += playerChange;
+           /* 
             if(needText)
             {
                 StartCoroutine(placeNameCo());
             }
+           */
         }
     }
 
+
+    /*
     private IEnumerator placeNameCo()
     {
         text.SetActive(true);
@@ -46,5 +50,5 @@ public class RoomMove : MonoBehaviour
         yield return new WaitForSeconds(4f);
         text.SetActive(false);
     }
-
+    */
 }

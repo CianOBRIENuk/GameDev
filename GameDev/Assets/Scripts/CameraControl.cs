@@ -5,20 +5,22 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     public Transform target; // set to the Player GameObject
+    public float smoothing;
+    public Vector2 maxPosition;
+    public Vector2 minPosition;
 
-    public Vector2 worldPosMin = new Vector2(-10f, -10f);
-    public Vector2 worldPosMax = new Vector2(10f, 10f);
 
-    void Update()
+    void FixedUpdate()
     {
-        if (target != null)
+        if(transform.position != target.position)
         {
-            Vector2 targetPos = target.transform.position;
+            Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
 
-            float x = Mathf.Clamp(targetPos.x, worldPosMin.x, worldPosMax.x);
-            float y = Mathf.Clamp(targetPos.y, worldPosMin.y, worldPosMax.y);
+            targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
+            targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
 
-            transform.position = new Vector3(x, y, transform.position.z);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
+
         }
     }
 }
